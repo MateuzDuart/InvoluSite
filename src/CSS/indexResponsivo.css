@@ -1,0 +1,408 @@
+@media (max-width: 1325px) {
+    .grid-container {
+        display: grid;
+        column-gap: 30px;
+        justify-content: stretch;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+        padding: 0 80px;
+    }
+    /* ---------------------------- Header Container ------------------------------*/
+
+    .botaoSecundario.cabecalho {
+        grid-column: 6/9;
+        height: 60px;
+        transition: 0.1s;
+        font: var(--p-sanserif);
+        width: clamp(150px, 100%, 400px);
+    }
+/* ---------------------------- CTA Container ------------------------------*/
+    .CTA {
+        grid-column: 1/5;
+        text-align: center;
+        min-width: unset;
+    }
+    .CTA h2 {
+        font: var(--h5);
+        display: inline-block;
+        margin-top: -16px;
+    }
+    .desenhoSite {
+        grid-column: 5/-1   ;
+        width: 40.5vw;
+    }
+/* ---------------------------- Sites Container ------------------------------*/
+    .sites .cabeca {
+        grid-column: 1/-1;
+        padding: 0;
+        padding-top: 24px;
+    }
+    .containerSites {
+        grid-column: 1/-1;
+        padding-bottom: 24px;
+
+    }
+/* ---------------------------- Blog Container ------------------------------*/
+/* ---------------------------- Depoimento Container ------------------------------*/
+.depoimento p {
+    grid-column: 1/9;
+}
+.depoimento .pessoa {
+    grid-column: 1/9;
+}
+.slide {
+    grid-column: 1/9;
+ 
+}
+.seta.direita {
+    grid-column: -1/-1;
+    transform: rotate(180deg) translateX(-5px);
+}
+.seta.direita:active{
+    transform: rotate(180deg) translateX(-5px) translateY(-3px);
+}
+
+}
+
+@media (min-width: 1100px) {
+    .botaoSecundario.cabecalho {
+        font: var(--h6);
+
+    }
+}
+
+/* ---------------------------- 769px a 991 ------------------------------*/
+
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .grid-container {
+        display: grid;
+        column-gap: 30px;
+        justify-content: stretch;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        padding: 0 60px;
+    }
+    /* ---------------------------- Header Container ------------------------------*/
+
+    .logo {
+        grid-column: 1/1;
+        width: 70px;
+    }
+    .botaoSecundario.cabecalho {
+        grid-column: 3/5;
+        font: var(--p-sanserif);
+        margin: 0 0 0 auto;
+        width: clamp(150px, 100%, 300px);
+    }
+
+/* ---------------------------- CTA Container ------------------------------*/
+    .CTA {
+    grid-column: 1/5;
+    text-align: center;
+    min-width: 350px;
+    }
+    .CTA h2 {
+        margin-top: unset;
+    }
+    .CTA .botoes {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+    .CTA .botaoPrimario {
+        height: 70px;
+        width: 300px;
+    }
+    .CTA .botaoSecundario {
+        margin: 0 0 0 16px;
+        width: 300px ;
+    }
+    .desenhoSite {
+        grid-column: 1/5;
+        width: 600px ;
+        margin: auto;
+    }
+    /* ---------------------------- Sites Container ------------------------------*/
+
+    .sites {
+        padding: 24px 0;
+    }
+    .sites .cabeca {
+        grid-column: 1/5;
+        justify-content: space-between;
+        padding: 0 60px;
+        flex-direction: row;
+
+    }
+    .sites h2 {
+        font: var(--h4);
+        font-weight: 500;
+    }
+    .sites form {
+        grid-column: unset;
+        overflow: hidden;
+    }
+    .containerSites {
+        flex-direction: row;
+        grid-column: 1/5;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+/* ---------------------------- Blog Container ------------------------------*/
+.blog h2 {
+    grid-column: 1/5;
+    font: var(--h4);
+    font-weight: 500;
+}
+.blog ol {
+    grid-column: 1/5;
+    font: var(--h6);
+}
+/* ---------------------------- Depoimento Container ------------------------------*/
+
+
+.depoimento p {
+    grid-column: 1/5;
+    font: var(--p-sanserif);
+    color: var(--claro-1);
+}
+.depoimento .pessoa {
+    grid-column: 1/5;
+}
+.slide {
+    grid-column: 1/5;
+    margin-top: 32px;
+}
+.seta {
+    bottom: 15px;
+}
+.seta.esquerda {
+    grid-column: 1/5;
+    transform: translateX(0px);
+}
+.seta.esquerda:active{
+    filter: drop-shadow(-2px -2px 0px var(--primaria1));
+    transition: 0.1s;
+    transform: translateX(0px) translateY(3px);
+}
+.seta.direita {
+    grid-column: 5/-1;
+transform: rotate(180deg) translateX(55px);
+}
+.seta.direita:active{
+    filter: drop-shadow(2px 2px 0px var(--primaria1));
+    transition: 0.1s;
+    transform: rotate(180deg) translateX(55px) translateY(-3px);
+}
+}
+
+/* ---------------------------- 320px a 768px ------------------------------*/
+
+@media (max-width: 768px) and (max-width: 768px){
+    .grid-container {
+        display: grid;
+        column-gap: 30px;
+        justify-content: stretch;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 0 20px;
+    }
+/* ---------------------------- Header Container ------------------------------*/
+
+    .logo {
+        width: 55px;
+    }
+    .botaoSecundario.cabecalho {
+        grid-column: 2/2;
+        min-width: 150px;
+        font: var(--p-sanserif);
+        margin: 0 0 0 auto;
+        max-width: 80%;
+    }
+    
+
+/* ---------------------------- CTA Container ------------------------------*/
+
+    
+    .CTA-main {
+        padding: 0;
+    }
+    
+    .CTA {
+        grid-column: 1/1;
+        min-width: unset;
+    }
+
+    .CTA h1 {
+        font: var(--h3);
+        white-space: nowrap;
+    }
+ 
+    .CTA h2 {
+        font: var(--h6);
+        margin-top: unset;
+    }
+
+    .CTA .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 16px;
+
+    }
+
+    .CTA .botaoSecundario {
+        margin: 16px 0 0 0;
+        width: 170px;
+    }
+
+    .desenhoSite {
+        grid-column: 1/1;
+        width: 280px;
+        margin: auto;
+    }
+
+/* ---------------------------- Beneficios Container ------------------------------*/
+
+
+    .beneficios .conteiner {
+        width: calc(300px* 5);
+    }
+
+    .beneficios .conteiner div {
+        width: 278px;
+    }
+/* ---------------------------- Sites Container ------------------------------*/
+
+    .sites {
+        padding: 24px 0;
+    }
+    .sites .cabeca {
+        grid-column: 1/1;
+        justify-content: space-between;
+        padding: 0 20px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .sites h2 {
+        font: var(--h5);
+        font-weight: 500;
+    }
+    .sites form {
+        grid-column: unset;
+        overflow: hidden;
+    }
+    .containerSites {
+        flex-direction: column;
+        grid-column: 1/1;
+        align-items: center;
+    }
+/* ---------------------------- Blog Container ------------------------------*/
+
+    .blog h2 {
+        grid-column: 1/1;
+        font: var(--h5);
+        font-weight: 500;
+    }
+    .blog ol {
+        grid-column: 1/1;
+        font: var(--small-sans);
+    }
+
+/* ---------------------------- Depoimento Container ------------------------------*/
+
+
+    .depoimento p {
+        grid-column: 1/2;
+        font: var(--p-sanserif);
+        color: var(--claro-1);
+    }
+    .depoimento .pessoa {
+        grid-column: 1/1;
+    }
+    .slide {
+        grid-column: 1/1;
+        margin-top: 32px;
+    }
+    .seta {
+        bottom: 15px;
+    }
+    .seta.esquerda {
+        grid-column: 1/2;
+        transform: translateX(0px);
+    }
+    .seta.esquerda:active{
+        filter: drop-shadow(-2px -2px 0px var(--primaria1));
+        transition: 0.1s;
+        transform: translateX(0px) translateY(3px);
+    }
+    .seta.direita {
+        grid-column: 2/-1;
+    transform: rotate(180deg) translateX(55px);
+    }
+    .seta.direita:active{
+        filter: drop-shadow(2px 2px 0px var(--primaria1));
+        transition: 0.1s;
+        transform: rotate(180deg) translateX(55px) translateY(-3px);
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px){
+    .desenhoSite {
+        width: 350px;
+    } 
+    .botaoSecundario.cabecalho {
+        min-width: 150px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px){
+    .botaoSecundario.cabecalho {
+        max-width: 100%;
+    }
+    .blog ol {
+        font: var(--p-sanserif);
+    }
+    .desenhoSite {
+        width: 400px;
+    } 
+    .CTA .botoes {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 24px;
+        margin-left: 24px;
+    } 
+    .CTA .botaoSecundario {
+        margin: 0 0 0 16px;
+        width: 170px;
+    } 
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .sites h2 {
+        font: var(--h4);
+        font-weight: 500;
+    }
+    .desenhoSite {
+        width: 500px;
+    } 
+    .CTA h1 {
+        display: block;
+        font: var(--h2);
+    }
+    .CTA h2 {
+        font: var(--h5);
+    }
+    .containerSites {
+        flex-direction: row;
+       flex-wrap: wrap;
+    }
+    .sites .cabeca {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
