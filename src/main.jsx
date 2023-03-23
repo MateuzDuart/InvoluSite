@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <h2>Desenvolva sua autoridade digital</h2>
           <div className="botoes">
             <button className="botaoPrimario">Crie seu site</button>
-            <button className="botaoSecundario">Ver Modelos</button>
+            <a href="#sites"><button className="botaoSecundario">Ver Modelos</button></a>
           </div>
         </div>
         <img class='desenhoSite' width={569} src="/src/Imagens/Desenho-site.svg" alt="desenho de exemplar de site em svg" />
@@ -32,7 +32,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Beneficio caminhoIMG="/src/Imagens/Desenho-site-rede-social.svg" altIMG="Desenho de página segura svg" titulo='Integração' desc='Seu site será integrado com todas suas redes socias para que seu cliente tenha facilidade em le encontrar em qualquer plataforma' />
         </div>
       </section>
-      <section className='sites grid-container'>
+      <section id='sites' className='sites grid-container'>
         <div className="cabeca">
           <h2>Modelos de sites</h2>
           <form>

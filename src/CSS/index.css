@@ -5,6 +5,7 @@
    margin: 0;
    padding: 0;
    color: var(--escuro0);
+   scroll-behavior: smooth;
 }
 
 :root {
@@ -17,7 +18,7 @@
     --claro-1: #FFFFFF;
     --claro0: #FFFBF2;
     --claro1: #FFF8E6;
-    --escuro-2: rgba(64, 60, 48, 0.9);
+    --escuro-2: #403c30e6;
     --escuro-1: #403C30;
     --escuro0: #26231A;
     --escuro1: #1A170F;
@@ -38,6 +39,9 @@
     
 }
 
+#root {
+    overflow: hidden;
+}
 .grid-container {
     display: grid;
     column-gap: 30px;
@@ -85,6 +89,7 @@ header {
 }
 
 .botaoSecundario {
+    color: var(--escuro-2);
     background: none;
     border: 1.5px solid var(--secundaria0);
     border-radius: 5px;
@@ -196,6 +201,7 @@ header {
     margin-bottom: 8px;
 }
 .beneficios p {
+    color: var(--escuro-2);
     font: var(--p);
 }
 
@@ -285,6 +291,9 @@ header {
     width: clamp(300px, 25.7vw,370px);
     text-align: center;
 }
+.containerSites div p{
+    color: var(--escuro-2);
+}
 
 
 .sites svg {
@@ -366,7 +375,6 @@ div.pessoa div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 16px;
 }
 
 .depoimento img{
@@ -379,6 +387,7 @@ div.pessoa div {
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
+    margin-top: 8px;
 }
 
 .bola {
