@@ -36,8 +36,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <div className="cabeca">
           <h2>Modelos de sites</h2>
           <form>
-            <input type="text" />
-            <button><img src="/src/Imagens/icone-lupa.svg" alt="" /></button>
+            <input type="text" aria-label="caixa de pesquisa"/>
+            <button aria-label="botão de pesquisa"><img src="/src/Imagens/icone-lupa.svg" alt="lupa svg" /></button>
             <div>
               <img src="/src/Imagens/icone-filtro.svg" alt="" />
               <select name="Sites" id="Sites">
