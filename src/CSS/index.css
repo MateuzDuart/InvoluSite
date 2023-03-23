@@ -109,8 +109,12 @@ header {
 
 }
 
+header a {
+    grid-column: -1/-1;
+    display: contents;
+}
+
 .botaoSecundario.cabecalho {
-  grid-column: 13/13;
   height: 60px;
   transition: 0.1s;
   font: var(--h6);

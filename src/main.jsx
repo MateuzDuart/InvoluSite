@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <header className="grid-container">
       <img className="logo" src="/src/Imagens/logo-involusite.png" alt="Logo Involusite" width={70} />
-      <button className="botaoSecundario cabecalho">Entre em contato direto comigo</button>
+      <a href="https://wa.me/5581986437864" target="_blank" rel="noreferrer"><button className="botaoSecundario cabecalho">Entre em contato direto comigo</button></a>
     </header>
     <main>
       <section className='CTA-main grid-container'>
@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <h1>Lucre online</h1>
           <h2>Desenvolva sua autoridade digital</h2>
           <div className="botoes">
-            <button className="botaoPrimario">Crie seu site</button>
+            <a href="https://wa.me/5581986437864?text=Ol%C3%A1%2C+eu+gostaria+de+saber+mais+sobre+o+desenvolvimento+de+um+site" target="_blank" rel="noreferrer"><button className="botaoPrimario">Crie seu site</button></a>
             <a href="#sites"><button className="botaoSecundario">Ver Modelos</button></a>
           </div>
         </div>
